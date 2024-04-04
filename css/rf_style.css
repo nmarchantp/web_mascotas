@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-center {
+    max-width: 1200px; 
+    margin: 0 auto 0 auto;
+}
+
+.contact-color {
+    position: relative; /* para ponerle prioridad al logo, se le pone relative a la clase padre */
+    background-color: #74A93F;
+    z-index: 0;    /* con esto creo capas, en este caso el color esta abajo*/
+}
+.logo {
+    position: absolute; /* aqui digo que el logo es prioridad*/
+    z-index: 1; /* la capa del logo se pone sobre el color al ser n° positivo*/
+    padding: 0 0 0 150px;
+    transform:translateY(-40px) /* es para mover el logo de forma vertical (Y)*/
+}
+.logo img {
+    width: 40%;
+
+}
+
+.header-contact { 
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-contact p { 
+    padding: 0 0 0 300px;
+    margin: 0;
+    color: white;
+    font-weight: 300;
+    font-size: 19px;
+}
+
+.header-contact span { 
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.header-ayuda {
+    justify-content: right;
+    font-weight: 300;
+    font-size: 19px;
+    
+}
+
+.header-ayuda a {
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+.top-menu {
+    position: relative;
+    text-align: center;
+    padding: 180px 0 0 170px;
+    z-index: 2;
+}
+
+.top-menu a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.top-menu span {
+    padding: 7px 10px;
+    color: white;
+    background-color: #A9A93F;
+    border-radius: 13px;
+}
