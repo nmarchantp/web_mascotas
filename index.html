@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/rf_style.css">
     <title>RebelFarm</title>
+    <!-- Siempre bootstrap va en el head -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
 </head>
 <body>
-    <div class="contact-color">
-        
+    <div class="contact-color">        
         <div class="header-contact container-center">
             <p>Contáctanos al <span>+569884098132</span>  | Lunes a Domingo : 09:00 a 19:00 hrs.</p>
             <div class="header-ayuda">
@@ -18,10 +19,11 @@
        
     </div>
     <div class="logo">
-        <img src="./Icono de animales/LOGO.png" alt="">
+        <img src="./img/ico_animales/LOGO.png" alt="">
     </div>
     <div class="top-menu container-center">
         <a href=""><span>Inicio</span></a>
+        <!-- <button type="button" class="btn btn-primary">Inicio</button> -->
         <a href="">Accesorios</a>
         <a href="">Alimentos</a>
         <a href="">Juguetes</a>
@@ -29,5 +31,7 @@
         <a href="">Servicios</a>
         <a href="">Contacto</a>
     </div> 
+    <!-- Siempre el script va al final del body -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
