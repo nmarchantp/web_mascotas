@@ -9,20 +9,12 @@ body {
 }
 
 .contact-color {
-    position: relative; /* para ponerle prioridad al logo, se le pone relative a la clase padre */
-    background-color: #74A93F;
-    z-index: 0;    /* con esto creo capas, en este caso el color esta abajo*/
+    background-color: #74A93F;  
 }
 
-.logo {
-    position: absolute; /* aqui digo que el logo es prioridad*/
-    z-index: 1; /* la capa del logo se pone sobre el color al ser n° positivo*/
-    transform:translateY(-70px) /* es para mover el logo de forma vertical (Y)*/
-}
-
-.img-fluid{
-    max-width: 100%;
-    height: auto;
+.logo img{
+    width: 60%;
+    margin-left: 20%;
 }
 
 .header-contact { 
@@ -41,8 +33,7 @@ body {
 }
 
 .contact-position{
-
-    margin-left: 20%;
+    margin-left: 18%;
 
 }
 
@@ -55,7 +46,7 @@ body {
 .horario { 
     color: white;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 19px;
 }
 .header-login {
     margin-left: 20px;
@@ -75,13 +66,49 @@ body {
     outline: none;
 }
 
+.header-main{
+    display: flex;
+    text-align: bottom;
+}
+.icon-main {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    padding: 3%;
+}
+.icon-main li{
+    list-style-type: none;
+    padding: 0 15px;
+}
+
+.icon-main a{
+    color: #74A93F;
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+.buscador{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 3% 0;
+}
+
+.buscador-menu{
+    padding: 2% 0 0 0;
+}
+
+.form-control{
+    display: flex;
+}
 
 .btn-light:hover {
-    background: #74A93F !important;
+    
     color: white !important;
 }
 
-.menu-position{
-    position: relative;
-    z-index: 2;
+.header-main{
+    padding: 10px 0;
 }
+
