@@ -10,36 +10,38 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Siempre bootstrap va en el head -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="contact-color">
-        <div class="header-contact container-center">
-            <p>Contáctanos al <span>+569884098133</span> | Lunes a Domingo : 09:00 a 19:00 hrs.</p>
-            <div class="header-ayuda">
+        <div class="d-flex header-contact container-center">
+            <div class="contact-position">
+                <p> Contáctanos al <span class="num-tel">+569884098133 </span>| <span class="horario">Lunes a Domingo : 09:00 a 19:00 hrs.</span></p>
+            </div>
+            <div class="header-login">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Ayuda
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Login <i class="fa-solid fa-paw fa-lg"></i>
                     </a>
                 </li>
             </div>
         </div>
-
     </div>
-    <!-- <div class="logo">
-        <img src="./img/ico_animales/LOGO.png" alt="">
-    </div> -->
+    <div class="logo col-md-5" >
+        <img src="./img/ico_animales/LOGO.png" class="img-fluid" alt="">
+    </div>
     <div class="container-center">
         <nav class="navbar bg-body-light">
             <div class="container-center">
                 <form class="d-flex" role="search">
-                    <input class="form-control me-1" type="¿Qué estas buscando?" placeholder="¿Qué estas buscando?" aria-label="¿Qué estas buscando?">
+                    <input class="form-control me-1" type="¿Qué estas buscando?" placeholder="¿Qué estas buscando?"
+                        aria-label="¿Qué estas buscando?">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
         </nav>
-        <div class="d-flex justify-content-center"> <!-- con esto se logra centrar la barra de navegacion-->
+        <div class="d-flex justify-content-center menu-position"> <!-- con esto se logra centrar la barra de navegacion-->
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,7 +55,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Accesorios
                                 </a>
@@ -69,7 +71,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Alimentos
                                 </a>
@@ -84,7 +86,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Juguetes
                                 </a>
@@ -99,7 +101,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Veterinaria
                                 </a>
@@ -133,6 +135,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/877d2cecdc.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

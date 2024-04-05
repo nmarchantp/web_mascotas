@@ -13,53 +13,63 @@ body {
     background-color: #74A93F;
     z-index: 0;    /* con esto creo capas, en este caso el color esta abajo*/
 }
+
 .logo {
     position: absolute; /* aqui digo que el logo es prioridad*/
     z-index: 1; /* la capa del logo se pone sobre el color al ser n° positivo*/
-    padding: 0 0 0 150px;
-    transform:translateY(-40px) /* es para mover el logo de forma vertical (Y)*/
+    transform:translateY(-70px) /* es para mover el logo de forma vertical (Y)*/
 }
-.logo img {
-    width: 40%;
 
+.img-fluid{
+    max-width: 100%;
+    height: auto;
 }
 
 .header-contact { 
     text-align: center;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .header-contact p { 
-    padding: 0 0 0 300px;
+    /* padding: 0 0 0 300px; */
     margin: 0;
     color: white;
     font-weight: 300;
     font-size: 19px;
 }
 
-.header-contact span { 
-    margin: 0;
+.contact-position{
+
+    margin-left: 20%;
+
+}
+
+.num-tel { 
     color: white;
     font-weight: 600;
     font-size: 19px;
 }
 
-.header-ayuda {
-    justify-content: right;
+.horario { 
+    color: white;
+    font-weight: 300;
+    font-size: 17px;
+}
+.header-login {
+    margin-left: 20px;
+    position: relative;
     font-weight: 400;
-    font-size: 19px;
-
-    
+    font-size: 19px; 
 }
 
-.header-ayuda li {
+.header-login li {
     list-style-type: none;
-    
+
 }
 
-.header-ayuda a {
+.header-login a {
     color: white;
     text-decoration: none;
     outline: none;
@@ -69,4 +79,9 @@ body {
 .btn-light:hover {
     background: #74A93F !important;
     color: white !important;
+}
+
+.menu-position{
+    position: relative;
+    z-index: 2;
 }
