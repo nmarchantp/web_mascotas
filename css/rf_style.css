@@ -48,8 +48,14 @@ body {
 
 .header-ayuda {
     justify-content: right;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 19px;
+
+    
+}
+
+.header-ayuda li {
+    list-style-type: none;
     
 }
 
@@ -59,25 +65,8 @@ body {
     outline: none;
 }
 
-.top-menu {
-    position: relative;
-    text-align: center;
-    padding: 180px 0 0 170px;
-    z-index: 2;
-}
 
-.top-menu a {
-    padding: 0 10px;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-size: 18px;
-
-}
-
-.top-menu span {
-    padding: 7px 10px;
-    color: white;
-    background-color: #A9A93F;
-    border-radius: 13px;
+.btn-light:hover {
+    background: #74A93F !important;
+    color: white !important;
 }
