@@ -9,75 +9,118 @@ body {
 }
 
 .contact-color {
-    position: relative; /* para ponerle prioridad al logo, se le pone relative a la clase padre */
-    background-color: #74A93F;
-    z-index: 0;    /* con esto creo capas, en este caso el color esta abajo*/
+    background-color: #74A93F;  
 }
-.logo {
-    position: absolute; /* aqui digo que el logo es prioridad*/
-    z-index: 1; /* la capa del logo se pone sobre el color al ser n° positivo*/
-    padding: 0 0 0 150px;
-    transform:translateY(-40px) /* es para mover el logo de forma vertical (Y)*/
-}
-.logo img {
-    width: 40%;
 
+.logo img{
+    width: 60%;
+    margin-left: 20%;
 }
 
 .header-contact { 
     text-align: center;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.btn-colorfarm{
+    background-color: #74A93F !important;
+    border-color: #74A93F !important;
+    font-size: 19px;
+
 }
 
 .header-contact p { 
-    padding: 0 0 0 300px;
     margin: 0;
     color: white;
     font-weight: 300;
     font-size: 19px;
 }
 
-.header-contact span { 
-    margin: 0;
+.contact-position{
+    margin-left: 18%;
+
+}
+
+.num-tel { 
     color: white;
     font-weight: 600;
     font-size: 19px;
 }
 
-.header-ayuda {
-    justify-content: right;
+.horario { 
+    color: white;
     font-weight: 300;
     font-size: 19px;
-    
+}
+.header-login {
+    margin-left: 20px;
+    position: relative;
+    font-weight: 400;
+    font-size: 19px; 
 }
 
-.header-ayuda a {
+.header-login li {
+    list-style-type: none;
+
+}
+
+.header-login a {
     color: white;
     text-decoration: none;
     outline: none;
 }
 
-.top-menu {
-    position: relative;
-    text-align: center;
-    padding: 180px 0 0 170px;
-    z-index: 2;
+.header-main{
+    display: flex;
+    text-align: bottom;
 }
 
-.top-menu a {
-    padding: 0 10px;
+.carousel-inner{
+    box-shadow: 0px 5px 5px #c9c8c8; /*aplicar sombra al carrusel, arriba nada, abajo sombra, blur difuminado y color de sombra*/
+
+
+}
+
+.icon-main {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    padding: 3%;
+}
+.icon-main li{
+    list-style-type: none;
+    padding: 0 15px;
+}
+
+.icon-main a{
+    color: #74A93F;
     text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-size: 18px;
-
+    outline: none;
 }
 
-.top-menu span {
-    padding: 7px 10px;
-    color: white;
-    background-color: #A9A93F;
-    border-radius: 13px;
+
+
+.buscador{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 3% 0;
 }
+
+.buscador-menu{
+    padding: 2% 0 0 0;
+}
+
+.form-control{
+    display: flex;
+}
+
+.btn{
+    background-color: #74A93F;
+}
+
+.header-main{
+    padding: 10px 0;
+}
+
