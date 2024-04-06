@@ -27,8 +27,28 @@ body {
 .btn-colorfarm{
     background-color: #74A93F !important;
     border-color: #74A93F !important;
-    font-size: 19px;
+    font-size: 19px !important;
+    padding: 0 7px 7px 0!important;
+    border: 0 !important;
+    text-align: center;
+}
 
+#title-login{
+    align-self: center !important;
+    font-size: 23px !important;
+}
+
+#form-label-farm{
+    text-align: left !important;
+}
+
+.form-check-label{
+    font-size: 16px !important;
+    vertical-align: text-top !important;   
+}
+
+.pawlogin{
+    padding: 5px;
 }
 
 .header-contact p { 
@@ -106,6 +126,10 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 0 0 3% 0;
+}
+
+.btn-buscador{
+    font-weight: 500 !important;
 }
 
 .buscador-menu{
