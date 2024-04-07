@@ -5,8 +5,8 @@ body {
 }
 
 .container-center {
-    max-width: 1200px; 
-    margin: 0 auto 0 auto;
+    max-width: 1200px !important; 
+    margin: 0 auto 0 auto  !important;
 }
 
 .contact-color {
@@ -32,13 +32,13 @@ body {
     padding: 0 7px 7px 0!important;
     border: 0 !important;
     text-align: center;
-    transition: 1s;
+    transition: transform 0.4s;
 }
 
 .btn-colorfarm:hover{ /*Aqui cambie que se agrande el login al pasar el cursor*/
     transform: scale(1.1);
-    font-weight: 600;
     cursor: pointer;
+    font-weight: 600;
 }
 
 #title-login{
@@ -117,7 +117,7 @@ body {
 .icon-main li{
     list-style-type: none;
     padding: 0 15px;
-    transition: 0.1s;
+    transition: transform 0.4s;
 }
 
 .icon-main li:hover{
@@ -187,3 +187,51 @@ body {
     box-shadow: 0px 5px 5px #c9c8c8; /*aplicar sombra al carrusel, arriba nada, abajo sombra, blur difuminado y color de sombra*/
 }
 
+.iconos-animales{
+    display: flex;
+
+}
+
+.iconos-animales img{
+    width: 17%;
+    padding: 30px 0 70px 0;
+    transition: transform 0.4s;
+
+}
+
+.iconos-animales img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.titulo-categ{
+    padding: 100px 0 30px 0;
+    text-align: center;
+}
+
+.titulo-categ h2{
+    color: #74A93F;
+    font-weight: 600;
+}
+
+.titulo-categ span{
+    font-weight: 900;
+}
+
+.titulo-categ i{
+    color: #C1C11A;
+}
+
+
+.bg-categ-pets{ /*forma para poner una imagen tras todo lo demas, tipo fondo*/
+    background: url(../img/ico_animales/fondo_pisadas.jpg);
+}
+
+.cards-wrapper{
+    display: flex;
+}
+
+.card{
+    margin: 0.5em;
+}
