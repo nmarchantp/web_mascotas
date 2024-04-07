@@ -4484,7 +4484,7 @@ fieldset:disabled .btn {
 
 .nav-fill .nav-item .nav-link,
 .nav-justified .nav-item .nav-link {
-    width: 100%
+    width: 100% 
 }
 
 .tab-content>.tab-pane {
@@ -4531,7 +4531,7 @@ fieldset:disabled .btn {
 .navbar>.container-sm,
 .navbar>.container-xl,
 .navbar>.container-xxl {
-    display: flex;
+    /* display: flex; */
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between
