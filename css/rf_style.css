@@ -107,7 +107,6 @@ body {
     text-align: bottom;
 }
 
-
 .icon-main { /*Estos son los iconos que estan al lado del buscador*/
     display: flex;
     justify-content: right;
@@ -148,6 +147,12 @@ body {
     font-weight: 500 !important;
 }
 
+.dropdown-item:hover{ /* cambia el color del dropmenu al pasar el*/
+    font-weight: 600 !important;
+    color: #55b197 !important;
+    
+}
+
 .buscador{
     /* display: flex; */
     justify-content: space-around;
@@ -181,3 +186,4 @@ body {
 .carousel-inner{
     box-shadow: 0px 5px 5px #c9c8c8; /*aplicar sombra al carrusel, arriba nada, abajo sombra, blur difuminado y color de sombra*/
 }
+

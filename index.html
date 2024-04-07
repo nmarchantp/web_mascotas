@@ -14,6 +14,9 @@
 </head>
 
 <body>
+
+    <!--BARRA SUPERIOR DE INFO Y LOGIN-->
+
     <div class="contact-color">
         <div class="d-flex header-contact container-center">
             <div class="contact-position">
@@ -21,28 +24,35 @@
                         09:00 a 19:00 hrs.</span></p>
             </div>
             <div class="header-login">
-                <!-- Botón para iniciar sesion pop up -->
+
+                <!-- BOTÓN LOGIN -->
+
                 <button type="button" class="btn btn-success btn-colorfarm" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">Login <i class="fa-solid fa-paw fa-lg"></i></button>
 
-                <!-- pop up -->
+                <!-- POP UP DE INICIO DE SESIÓN -->
+
+
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header" id="title-login">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1><i class="fa-solid fa-paw fa-md pawlogin"></i>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1><i
+                                    class="fa-solid fa-paw fa-md pawlogin"></i>
                             </div>
                             <div class="modal-body">
                                 <form>
                                     <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
                                         <label for="floatingInput">Correo electrónico</label>
                                     </div>
-                                    <div class="form-floating mb-3" >
-                                        <input type="password" class="form-control" id="floatingPassword" placeholder="password">
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="password">
                                         <label for="floatingPassword">Contraseña</label>
-                                        
+
                                     </div>
                                     <div class="mb-3 form-check" id="form-label-farm">
                                         <input checked="" type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -60,10 +70,16 @@
             </div>
         </div>
     </div>
+
+    <!--LOGO-->
+
     <div class="container-center header-main">
         <div class="logo">
             <img src="./img/ico_animales/LOGO.png" alt="">
         </div>
+
+        <!--BUSCADOR-->
+
         <div class="buscador-menu">
             <div class="buscador">
                 <nav class="navbar bg-body-light">
@@ -76,6 +92,9 @@
                     </div>
                 </nav>
             </div>
+
+            <!--BARRA DE NAVEGACION-->
+
             <div class="d-flex justify-content-center menu-position">
                 <!-- con esto se logra centrar la barra de navegacion-->
                 <nav class="navbar navbar-expand-lg">
@@ -99,7 +118,7 @@
                                         <li><a class="dropdown-item" href="#">Conejos</a></li>
                                         <li><a class="dropdown-item" href="#">Equinos</a></li>
                                         <li><a class="dropdown-item" href="#">Aves</a></li>
-                                        
+
 
                                     </ul>
                                 </li>
@@ -114,7 +133,7 @@
                                         <li><a class="dropdown-item" href="#">Ovinos</a></li>
                                         <li><a class="dropdown-item" href="#">Conejos</a></li>
                                         <li><a class="dropdown-item" href="#">Equinos</a></li>
-                                        <li><a class="dropdown-item" href="#">Aves</a></li>                                        
+                                        <li><a class="dropdown-item" href="#">Aves</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -160,6 +179,9 @@
                 </nav>
             </div>
         </div>
+
+        <!--ICONOS DE SUCURSALES FAVORITOS Y CARRITO-->
+
         <div class="icon-main">
             <div class="icon-shop">
                 <li class="nav-item dropdown">
@@ -184,6 +206,11 @@
             </div>
         </div>
     </div>
+
+    <!--Aqui se debe colocar el contenido diferente de cada página-->
+
+    <!--CARRUSEL-->
+
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -205,13 +232,19 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-<!--Aqui se debe colocar el contenido diferente de cada página-->
+
+    <!--CATEGORIA DE ANIMALES-->
+
+    
+       
+
+    </div>
 
 
 
 
 
-<!--Aqui termina el contenido diferente de cada página-->
+    <!--Aqui termina el contenido diferente de cada página-->
     <!-- Siempre el script va al final del body -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
