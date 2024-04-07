@@ -14,6 +14,9 @@
 </head>
 
 <body>
+
+    <!--BARRA SUPERIOR DE INFO Y LOGIN-->
+
     <div class="contact-color">
         <div class="d-flex header-contact container-center">
             <div class="contact-position">
@@ -21,28 +24,35 @@
                         09:00 a 19:00 hrs.</span></p>
             </div>
             <div class="header-login">
-                <!-- Botón para iniciar sesion pop up -->
+
+                <!-- BOTÓN LOGIN -->
+
                 <button type="button" class="btn btn-success btn-colorfarm" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">Login <i class="fa-solid fa-paw fa-lg"></i></button>
 
-                <!-- pop up -->
+                <!-- POP UP DE INICIO DE SESIÓN -->
+
+
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header" id="title-login">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1><i class="fa-solid fa-paw fa-md pawlogin"></i>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1><i
+                                    class="fa-solid fa-paw fa-md pawlogin"></i>
                             </div>
                             <div class="modal-body">
                                 <form>
                                     <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
                                         <label for="floatingInput">Correo electrónico</label>
                                     </div>
-                                    <div class="form-floating mb-3" >
-                                        <input type="password" class="form-control" id="floatingPassword" placeholder="password">
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="password">
                                         <label for="floatingPassword">Contraseña</label>
-                                        
+
                                     </div>
                                     <div class="mb-3 form-check" id="form-label-farm">
                                         <input checked="" type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -60,10 +70,16 @@
             </div>
         </div>
     </div>
+
+    <!--LOGO-->
+
     <div class="container-center header-main">
         <div class="logo">
             <img src="./img/ico_animales/LOGO.png" alt="">
         </div>
+
+        <!--BUSCADOR-->
+
         <div class="buscador-menu">
             <div class="buscador">
                 <nav class="navbar bg-body-light">
@@ -76,6 +92,9 @@
                     </div>
                 </nav>
             </div>
+
+            <!--BARRA DE NAVEGACION-->
+
             <div class="d-flex justify-content-center menu-position">
                 <!-- con esto se logra centrar la barra de navegacion-->
                 <nav class="navbar navbar-expand-lg">
@@ -87,11 +106,8 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                                </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                    <a class="nav-link text-menu" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Accesorios
                                     </a>
@@ -102,12 +118,12 @@
                                         <li><a class="dropdown-item" href="#">Conejos</a></li>
                                         <li><a class="dropdown-item" href="#">Equinos</a></li>
                                         <li><a class="dropdown-item" href="#">Aves</a></li>
-                                        
+
 
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                    <a class="nav-link text-menu" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Alimentos
                                     </a>
@@ -117,11 +133,11 @@
                                         <li><a class="dropdown-item" href="#">Ovinos</a></li>
                                         <li><a class="dropdown-item" href="#">Conejos</a></li>
                                         <li><a class="dropdown-item" href="#">Equinos</a></li>
-                                        <li><a class="dropdown-item" href="#">Aves</a></li>                                        
+                                        <li><a class="dropdown-item" href="#">Aves</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                    <a class="nav-link text-menu" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Juguetes
                                     </a>
@@ -135,7 +151,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                    <a class="nav-link text-menu" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Veterinaria
                                     </a>
@@ -152,10 +168,10 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Servicios</a>
+                                    <a class="nav-link text-menu" aria-current="page" href="#">Servicios</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Contacto</a>
+                                    <a class="nav-link text-menu" aria-current="page" href="#">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -163,6 +179,9 @@
                 </nav>
             </div>
         </div>
+
+        <!--ICONOS DE SUCURSALES FAVORITOS Y CARRITO-->
+
         <div class="icon-main">
             <div class="icon-shop">
                 <li class="nav-item dropdown">
@@ -187,16 +206,21 @@
             </div>
         </div>
     </div>
+
+    <!--Aqui se debe colocar el contenido diferente de cada página-->
+
+    <!--CARRUSEL-->
+
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img href="#" src="./img/img_carrusel/imagen_carrusel_REGIST.jpg" class="d-block w-100" alt="">
+                <img href="#" src="./img/img_carrusel/img_carro_lg.jpg" class="d-block w-100" alt="">
             </div>
             <div class="carousel-item">
-                <img src="./img/img_carrusel/imagen_carro_reg.png" class="d-block w-100" alt="...">
+                <img src="./img/img_carrusel/img_carro_lg.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="./img/img_carrusel/imagen_carrusel_REGIST.jpg" class="d-block w-100" alt="...">
+                <img src="./img/img_carrusel/img_carro_lg.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -208,13 +232,107 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-<!--Aqui se debe colocar el contenido diferente de cada página-->
+
+    <!--CATEGORIA ANIMALES-->
+    <div class="bg-categ-pets">
+        <div class="container-center">
+            <div class="titulo-categ">
+                <h2><i class="fa-sharp fa-solid fa-paw"></i> CATEGORÍAS DESTACADAS <i class="fa-sharp fa-solid fa-paw"></i></h2>
+            </div>
+            <div class="iconos-animales">
+                <img src="./img/ico_animales/BOVINO.png" alt="...">
+                <img src="./img/ico_animales/PORCINO.png" alt="...">
+                <img src="./img/ico_animales/OVINO.png" alt="...">
+                <img src="./img/ico_animales/CONEJOS.png" alt="...">
+                <img src="./img/ico_animales/EQUINO.png" alt="...">
+                <img src="./img/ico_animales/AVES.png" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <!--CARRUSEL CON CARDS-->
+    <div class="categ-pets">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/img_productos/Casco_gallina.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/img_productos/bolso_gallina.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/img_productos/accesorios_alimentacion_vacaovejacaballo.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper"></div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/img_productos/accesorios_conejo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/img_productos/alimento_cerdo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/img_productos/antiparasitario_equino.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper"></div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/img_productos/arnes_aves.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/img_productos/arnes_conejo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/img_productos/collar_cordero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 
 
-
-
-
-<!--Aqui termina el contenido diferente de cada página-->
+    <!--Aqui termina el contenido diferente de cada página-->
     <!-- Siempre el script va al final del body -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
