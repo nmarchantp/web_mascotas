@@ -183,10 +183,6 @@ body {
     padding: 10px 0;
 }
 
-/*-------------------------------------------------------------------
- Desde aqui hacia abajo es el css correspondiente a cada pagina 
--------------------------------------------------------------------*/
-
 .carousel-inner{
     box-shadow: 0px 5px 5px #c9c8c8; /*aplicar sombra al carrusel, arriba nada, abajo sombra, blur difuminado y color de sombra*/
 }
@@ -198,7 +194,7 @@ body {
 
 .iconos-animales img{
     width: 17%;
-    padding: 30px 0 70px 0;
+    padding: 30px 0 50px 0;
     transition: transform 0.4s;
 
 }
@@ -210,13 +206,14 @@ body {
 }
 
 .titulo-categ{
-    padding: 100px 0 30px 0;
+    padding: 50px 0 30px 0;
     text-align: center;
 }
 
 .titulo-categ h2{
     color: #74A93F;
     font-weight: 600;
+    font-size: x-large;
 }
 
 .titulo-categ span{
@@ -230,17 +227,31 @@ body {
 
 .bg-categ-pets{ /*forma para poner una imagen tras todo lo demas, tipo fondo*/
     background: url(../img/ico_animales/fondo_pisadas.jpg);
+
+}
+
+.bestseller{
+    padding: 30px 0 0 0;
+    font-size: x-large;
 }
 
 .cards-wrapper{
     display: flex;
     justify-content: center;
+    padding: 30px 40px;
 }
 
-.card{
+.card-prod{    
     margin: 0.5em;
     box-shadow: 0px 5px 5px #c9c8c8;
+    transition: transform 0.4s;
 }
+
+.card-prod:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 
 .flechas-items{
     background-color: #7dbcaac7;
@@ -249,3 +260,81 @@ body {
     box-shadow: 0px 5px 5px #c9c8c8;
 }
 
+.card-body{
+   display: grid;
+}
+
+.btn-agregar i{
+    padding: 3px ;
+}
+
+
+.iconos-marcas{
+    display: flex;
+
+}
+
+.iconos-marcas img{
+    width: 20%;
+    align-items: center;
+    padding: 30px 50px 70px 50px;
+    transition: transform 0.4s;
+    
+
+}
+
+.iconos-marcas img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+.footer-black{
+    background-color: #1E1E1E;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+.footer-black li{
+    list-style-type: none;
+}
+
+
+.footer-black img{
+    width: 50%;   
+}
+
+.pie-pagina{
+    background-color: #1E1E1E !important;
+   
+}
+
+.card-final{
+    background-color: #1E1E1E !important;
+    margin: 0.5em;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: #1E1E1E !important;
+    
+}
+
+.text-final-box h5{
+    color: white !important;
+}
+
+.text-final-box a{
+    color: white !important;
+}
+
+.text-final-box h6{
+    color: white !important;
+}
+
+.derechos-re p{
+    color: white;
+    text-align: center;
+}
