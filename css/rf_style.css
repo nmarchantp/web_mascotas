@@ -194,7 +194,7 @@ body {
 
 .iconos-animales img{
     width: 17%;
-    padding: 30px 0 70px 0;
+    padding: 30px 0 50px 0;
     transition: transform 0.4s;
 
 }
@@ -206,13 +206,14 @@ body {
 }
 
 .titulo-categ{
-    padding: 100px 0 30px 0;
+    padding: 50px 0 30px 0;
     text-align: center;
 }
 
 .titulo-categ h2{
     color: #74A93F;
     font-weight: 600;
+    font-size: x-large;
 }
 
 .titulo-categ span{
@@ -226,17 +227,33 @@ body {
 
 .bg-categ-pets{ /*forma para poner una imagen tras todo lo demas, tipo fondo*/
     background: url(../img/ico_animales/fondo_pisadas.jpg);
+
+}
+
+
+
+.bestseller{
+    padding: 30px 0 0 0;
+    font-size: x-large;
 }
 
 .cards-wrapper{
     display: flex;
     justify-content: center;
+    padding: 30px 40px;
 }
 
-.card{
+.card{    
     margin: 0.5em;
     box-shadow: 0px 5px 5px #c9c8c8;
+    transition: transform 0.4s;
 }
+
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 
 .flechas-items{
     background-color: #7dbcaac7;
@@ -245,3 +262,10 @@ body {
     box-shadow: 0px 5px 5px #c9c8c8;
 }
 
+.card-body{
+   display: grid;
+}
+
+.btn-agregar i{
+    padding: 3px ;
+}
