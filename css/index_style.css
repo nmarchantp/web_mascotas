@@ -183,12 +183,13 @@ body {
     padding: 10px 0;
 }
 
-.carousel-inner{
+.superior-carro{
     box-shadow: 0px 5px 5px #c9c8c8; /*aplicar sombra al carrusel, arriba nada, abajo sombra, blur difuminado y color de sombra*/
 }
 
 .iconos-animales{
     display: flex;
+    padding: 0 10px;
 
 }
 
@@ -268,25 +269,32 @@ body {
     padding: 3px ;
 }
 
+.nuestras-marcas{
+    padding: 30px 0 80px 0;
+}
 
 .iconos-marcas{
     display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
 
 }
 
 .iconos-marcas img{
-    width: 20%;
-    align-items: center;
-    padding: 30px 50px 70px 50px;
+    width: 17%;
+    padding: 30px 0 50px 0;
     transition: transform 0.4s;
-    
 
 }
 
 .iconos-marcas img:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
     cursor: pointer;
 
+}
+
+.inferior-carro img{
+    width: 17%;
 }
 
 .footer-black{
@@ -335,6 +343,10 @@ body {
 }
 
 .derechos-re p{
+    margin: 0 0;
     color: white;
     text-align: center;
+    font-style: italic;
 }
+
+
