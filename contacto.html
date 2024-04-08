@@ -174,7 +174,7 @@
                                     <a class="nav-link text-menu" aria-current="page" href="#">Servicios</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-menu" aria-current="page" href="#">Contacto</a>
+                                    <a class="nav-link text-menu" aria-current="page" href="./contacto.html">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -188,7 +188,7 @@
         <div class="icon-main">
             <div class="icon-shop">
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link" href="./index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-shop fa-lg"></i>
                     </a>
                 </li>
@@ -212,82 +212,135 @@
 
     <!--Aqui se debe colocar el contenido diferente de cada página-->
 
-    <!-- Banner de contactos -->
-    <div>
+    <div class="banner">
         <img src="./img/img_carrusel/contacto.jpg" class="img-fluid" alt="...">
     </div>
     <!-- Container de cards y formulario -->
+    
     <div class="container">
+            <!-- Banner de contactos -->
+
         <div class="row g-0 rows">
             <div class="col-sm-2 col-md-2 info-card">
-                <div class="card">
+                <div class="card contact-card">
                     <div class="card-body">
                         <i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #74A93F;"></i>
                         <hr>
-                        <h6 class="card-title">WHATSAPP</h6>                        
+                        <h6 class="card-title">WHATSAPP</h6>
                         <p class="card-text">Llámanos al +56988409813</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card contact-card">
                     <div class="card-body">
                         <i class="fa-solid fa-location-dot fa-2xl" style="color: #74A93F;"></i>
                         <hr>
-                        <h6 class="card-title">UBICACIÓN</h6>                     
+                        <h6 class="card-title">UBICACIÓN</h6>
                         <p class="card-text">Francisco Bilbao 11095, Osorno, Los Lagos</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-2 col-md-2 info-card">                
-                <div class="card">
+
+            <div class="col-2 col-md-2 info-card">
+                <div class="card contact-card">
                     <div class="card-body">
                         <i class="fa-solid fa-envelope fa-2xl" style="color: #74A93F;"></i>
                         <hr>
-                        <h6 class="card-title">CORREO ELECTRÓNICO</h6>                  
+                        <h6 class="card-title">CORREO ELECTRÓNICO</h6>
                         <p class="card-text">contacto@rebelfarm.cl</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card contact-card">
                     <div class="card-body">
                         <i class="fa-brands fa-square-instagram fa-2xl" style="color: #74A93F;"></i>
                         <hr>
-                        <h6 class="card-title">RRSS</h6>                    
+                        <h6 class="card-title">RRSS</h6>
                         <p class="card-text">@Amigos_rebel_farm</p>
                     </div>
                 </div>
             </div>
-            <div class="col-8 col-md-6">                
+            <div class="col-8 col-md-6">
                 <form class="formulario-contacto">
                     <div class="mb-3">
-                      <label for="inputNombre" class="form-label">Nombre Completo</label>
-                      <input type="text" class="form-control" id="inputNombre">
+                        <label for="inputNombre" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="inputNombre">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                      </div>
-                      <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
                         <label for="inputTelefono" class="form-label">Whatsapp</label>
                         <input type="tel" class="form-control" id="inputTelefono" placeholder="+56912345678">
-                      </div>
+                    </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Cuéntanos</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
             </div>
-          </div>
-          </div>
         </div>
+        <div class="contenedor-mapa">
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d189.40215456970296!2d-73.13132166953979!3d-40.57616426552014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9616373619a45221%3A0xcab1ee866fc83d5e!2sVaca%20Escultura!5e0!3m2!1ses-419!2scl!4v1712616721068!5m2!1ses-419!2scl"
+                allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    
+</div>
 
-    <!--Aqui termina el contenido diferente de cada página-->
-    <!-- Siempre el script va al final del body -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/877d2cecdc.js" crossorigin="anonymous"></script>
+        <!--FOOTER-->
+        <div class="pie-pagina">
+            <div class="footer-black container-center">
+                <div class="card card-final" style="width: 18rem;">
+                    <div class="card-body text-final-box">
+                        <h5 class="card-title">CONTACTO</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">_______________</h6>
+                        
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Francisco Bilbao 1095, Osorno. Los Lagos</h6>
+                        <img src="./img/ico_animales/icono_footer.png" alt="...">
+
+                    </div>
+                </div>
+                <div class="card card-final" style="width: 18rem;">
+                    <div class="card-body text-final-box">
+                        <h5 class="card-title">NOSOTROS</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">_______________</h6>
+                        <li><a class="dropdown-item" href="#">Misión y visión</a></li>
+                        <li><a class="dropdown-item" href="#">Políticas de Seguridad</a></li>
+                        <li><a class="dropdown-item" href="#">Políticas de entrega</a></li>
+                        <li><a class="dropdown-item" href="#">Términos y Condiciones</a></li>
+                        <li><a class="dropdown-item" href="#">Seguimiento de tu pedido</a></li>
+                        <li><a class="dropdown-item" href="#">Únete a nuestro equipo</a></li>
+                    </div>
+                </div>
+                <div class="card card-final" style="width: 18rem;">
+                    <div class="card-body text-final-box">
+                        <h5 class="card-title">CLIENTE</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">_______________</h6>
+                        <li><a class="dropdown-item" href="#">Rebel Club</a></li>              
+                        <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
+                        <li><a class="dropdown-item" href="#">Carrito</a></li>
+                        <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                        <li><a class="dropdown-item" href="#">Historial</a></li>
+                        <li><a class="dropdown-item" href="#">Productos por puntos</a></li>
+                    </div>    
+                </div>
+            <!--FIN DE LA PAGINA-->   
+            </div>
+            <div class="derechos-re">
+                <p>Rebelfarm S.A. Todos los derechos reservados 2024.</p>
+            </div>
+            <!--FIN DE LA PAGINA-->
+        <!--Aqui termina el contenido diferente de cada página-->
+        <!-- Siempre el script va al final del body -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/877d2cecdc.js" crossorigin="anonymous"></script>
 
 
 </body>
