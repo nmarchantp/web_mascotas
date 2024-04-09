@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     font-family: 'Roboto',Arial, Helvetica, sans-serif !important;
@@ -183,12 +182,11 @@ body {
     padding: 10px 0;
 }
 
-
 /*-------------------------------------------------------------------
  Desde aqui hacia abajo es el css correspondiente a cada pagina 
 -------------------------------------------------------------------*/
 
-.container{
+.contenido-politicas{
     justify-content: center;
     padding: 50px 0px 50px 0px;
 }
