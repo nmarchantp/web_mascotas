@@ -187,7 +187,19 @@ body {
 /*-------------------------------------------------------------------
  Desde aqui hacia abajo es el css correspondiente a cada pagina 
 -------------------------------------------------------------------*/
+.banner img{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
 
+.container{
+    justify-content: center;
+}
+
+.formulario-registro{
+    margin: 50px 0px 50px 50px;
+}
 
 
 
