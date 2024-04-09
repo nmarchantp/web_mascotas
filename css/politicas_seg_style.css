@@ -188,6 +188,14 @@ body {
  Desde aqui hacia abajo es el css correspondiente a cada pagina 
 -------------------------------------------------------------------*/
 
+.container{
+    justify-content: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.accordion-body{
+    text-align: justify;
+}
 
 
 
