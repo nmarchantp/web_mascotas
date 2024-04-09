@@ -1,2 +1,3 @@
 # web_mascotas
-proyecto semestral
+Proyecto Semestral Programación Web Vespertino Duoc 2024
+

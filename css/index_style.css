@@ -183,6 +183,10 @@ body {
     padding: 10px 0;
 }
 
+/*-------------------------------------------------------------------
+ Desde aqui hacia abajo es el css correspondiente a cada pagina 
+-------------------------------------------------------------------*/
+
 .superior-carro{
     box-shadow: 0px 5px 5px #c9c8c8; /*aplicar sombra al carrusel, arriba nada, abajo sombra, blur difuminado y color de sombra*/
 }
@@ -296,6 +300,10 @@ body {
 .inferior-carro img{
     width: 17%;
 }
+
+/*-------------------------------------------------------------------
+ Desde aqui hacia arriba es el css correspondiente a cada pagina 
+-------------------------------------------------------------------*/
 
 .footer-black{
     background-color: #1E1E1E;

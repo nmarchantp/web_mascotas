@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--meta responsivo-->
+    <link rel="stylesheet" href="../css/contact_style.css">
+    <title>RebelFarm</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <!-- Siempre bootstrap va en el head -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+    <!--BARRA SUPERIOR DE INFO Y LOGIN-->
+
+    <div class="contact-color">
+        <div class="d-flex header-contact container-center">
+            <div class="contact-position">
+                <p> Contáctanos al <span class="num-tel">+569884098133 </span>| <span class="horario">Lunes a Domingo :
+                        09:00 a 19:00 hrs.</span></p>
+            </div>
+            <div class="header-login">
+
+                <!-- BOTÓN LOGIN -->
+
+                <button type="button" class="btn btn-success btn-colorfarm" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Login <i class="fa-solid fa-paw fa-lg"></i></button>
+
+                <!-- POP UP DE INICIO DE SESIÓN -->
+
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" id="title-login">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1><i
+                                    class="fa-solid fa-paw fa-md pawlogin"></i>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">Correo electrónico</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="password">
+                                        <label for="floatingPassword">Contraseña</label>
+
+                                    </div>
+                                    <div class="mb-3 form-check" id="form-label-farm">
+                                        <input checked="" type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Guardar contraseña</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-success">Iniciar sesión</button>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </li>
+            </div>
+        </div>
+    </div>
+
+    <!--LOGO-->
+
+    <div class="container-center header-main">
+        <div class="logo">
+            <img src="../img/ico_animales/LOGO.png" alt="">
+        </div>
+
+        <!--BUSCADOR-->
+
+        <div class="buscador-menu">
+            <div class="buscador">
+                <nav class="navbar bg-body-light">
+                    <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-1" type="¿Qué estas buscando?"
+                                placeholder="¿Qué estas buscando?" aria-label="¿Qué estas buscando?">
+                            <button class="btn btn-outline-success btn-buscador" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+
+            <!--BARRA DE NAVEGACION-->
+
+            <div class="d-flex justify-content-center menu-position">
+                <!-- con esto se logra centrar la barra de navegacion-->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-menu" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Accesorios
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Bovinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Porcinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Ovinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Conejos</a></li>
+                                        <li><a class="dropdown-item" href="#">Equinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Aves</a></li>
+
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-menu" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Alimentos
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Bovinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Porcinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Ovinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Conejos</a></li>
+                                        <li><a class="dropdown-item" href="#">Equinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Aves</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-menu" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Juguetes
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Bovinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Porcinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Ovinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Conejos</a></li>
+                                        <li><a class="dropdown-item" href="#">Equinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Aves</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-menu" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Veterinaria
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Bovinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Porcinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Ovinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Conejos</a></li>
+                                        <li><a class="dropdown-item" href="#">Equinos</a></li>
+                                        <li><a class="dropdown-item" href="#">Aves</a></li>
+                                        <!-- <li>
+                                    <hr class="dropdown-divider" ( por si necesitaramos dividir los menu desplegables)>
+                                </li> -->
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-menu" aria-current="page" href="#">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-menu" aria-current="page" href="./contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!--ICONOS DE INICIO FAVORITOS Y CARRITO-->
+
+        <div class="icon-main">
+            <div class="icon-shop">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="./index.html" role="button" aria-expanded="false">
+                        <i class="fa-solid fa-shop fa-lg"></i>
+                    </a>
+                </li>
+            </div>
+            <div class="icon-heart">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" aria-expanded="false">
+                        <i class="fa-solid fa-heart fa-lg"></i>
+                    </a>
+                </li>
+            </div>
+            <div class="icon-shopping">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" aria-expanded="false">
+                        <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+
+    <!--Aqui se debe colocar el contenido diferente de cada página-->
+
+    <div class="banner">
+        <img src="../img/img_carrusel/contacto.jpg" class="img-fluid" alt="...">
+    </div>
+    <!-- Container de cards y formulario -->
+    
+    <div class="container">
+            <!-- Banner de contactos -->
+
+        <div class="row g-0 rows">
+            <div class="col-sm-2 col-md-2 info-card">
+                <div class="card contact-card">
+                    <div class="card-body">
+                        <i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #74A93F;"></i>
+                        <hr>
+                        <h6 class="card-title">WHATSAPP</h6>
+                        <p class="card-text">Llámanos al +56988409813</p>
+                    </div>
+                </div>
+                <div class="card contact-card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-location-dot fa-2xl" style="color: #74A93F;"></i>
+                        <hr>
+                        <h6 class="card-title">UBICACIÓN</h6>
+                        <p class="card-text">Francisco Bilbao 11095, Osorno, Los Lagos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2 col-md-2 info-card">
+                <div class="card contact-card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-envelope fa-2xl" style="color: #74A93F;"></i>
+                        <hr>
+                        <h6 class="card-title">CORREO ELECTRÓNICO</h6>
+                        <p class="card-text">contacto@rebelfarm.cl</p>
+                    </div>
+                </div>
+                <div class="card contact-card">
+                    <div class="card-body">
+                        <i class="fa-brands fa-square-instagram fa-2xl" style="color: #74A93F;"></i>
+                        <hr>
+                        <h6 class="card-title">RRSS</h6>
+                        <p class="card-text">@Amigos_rebel_farm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-6">
+                <form class="formulario-contacto">
+                    <div class="mb-3">
+                        <label for="inputNombre" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="inputNombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="nombre@ejemplo.cl">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputTelefono" class="form-label">Whatsapp</label>
+                        <input type="tel" class="form-control" id="inputTelefono" placeholder="+56912345678">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Cuéntanos</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="contenedor-mapa">
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d189.40215456970296!2d-73.13132166953979!3d-40.57616426552014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9616373619a45221%3A0xcab1ee866fc83d5e!2sVaca%20Escultura!5e0!3m2!1ses-419!2scl!4v1712616721068!5m2!1ses-419!2scl"
+                allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    
+</div>
+
+<!--Aqui termina el contenido diferente de cada página-->
+        <!--FOOTER-->
+        <div class="pie-pagina">
+            <div class="footer-black container-center">
+                <div class="card card-final" style="width: 18rem;">
+                    <div class="card-body text-final-box">
+                        <h5 class="card-title">CONTACTO</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">_______________</h6>
+                        
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Francisco Bilbao 1095, Osorno. Los Lagos</h6>
+                        <img src="../img/ico_animales/icono_footer.png" alt="...">
+
+                    </div>
+                </div>
+                <div class="card card-final" style="width: 18rem;">
+                    <div class="card-body text-final-box">
+                        <h5 class="card-title">NOSOTROS</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">_______________</h6>
+                        <li><a class="dropdown-item" href="#">Misión y visión</a></li>
+                        <li><a class="dropdown-item" href="./politicas_seg.html">Políticas de Seguridad</a></li>
+                        <li><a class="dropdown-item" href="#">Políticas de Entrega</a></li>
+                        <li><a class="dropdown-item" href="#">Términos y Condiciones</a></li>
+                        <li><a class="dropdown-item" href="#">Seguimiento de tu pedido</a></li>
+                        <li><a class="dropdown-item" href="#">Únete a nuestro equipo</a></li>
+                    </div>
+                </div>
+                <div class="card card-final" style="width: 18rem;">
+                    <div class="card-body text-final-box">
+                        <h5 class="card-title">CLIENTE</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">_______________</h6>
+                        <li><a class="dropdown-item" href="#">Rebel Club</a></li>              
+                        <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
+                        <li><a class="dropdown-item" href="#">Carrito</a></li>
+                        <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                        <li><a class="dropdown-item" href="#">Historial</a></li>
+                        <li><a class="dropdown-item" href="#">Productos por puntos</a></li>
+                    </div>    
+                </div>
+            <!--FIN DE LA PAGINA-->   
+            </div>
+            <div class="derechos-re">
+                <p>Rebelfarm S.A. Todos los derechos reservados 2024.</p>
+            </div>
+            <!--FIN DE LA PAGINA-->
+
+        <!-- Siempre el script va al final del body -->
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/877d2cecdc.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+</html>
