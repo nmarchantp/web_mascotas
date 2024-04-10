@@ -203,6 +203,7 @@ body {
  Desde aqui hacia abajo es el css correspondiente a cada pagina 
 -------------------------------------------------------------------*/
 
+
 .superior-carro{
     box-shadow: 0px 5px 5px #c9c8c8; /*aplicar sombra al carrusel, arriba nada, abajo sombra, blur difuminado y color de sombra*/
 }
