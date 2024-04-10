@@ -1,93 +1,96 @@
 body {
     margin: 0;
-    font-family: 'Roboto',Arial, Helvetica, sans-serif !important;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
 }
 
 .container-center {
-    max-width: 1200px !important; 
-    margin: 0 auto 0 auto  !important;
+    max-width: 1200px !important;
+    margin: 0 auto 0 auto !important;
 }
 
 .contact-color {
     background-color: #74A93F;
 }
 
-.logo img{
+.logo img {
     width: 60%;
     margin-left: 20%;
 }
 
-.header-contact { 
+.header-contact {
     text-align: center;
     padding: 10px;
     display: flex;
     justify-content: space-around;
 }
 
-.btn-colorfarm{ /*boton del login y patita*/
+.btn-colorfarm {
+    /*boton del login y patita*/
     background-color: #74A93F !important;
     border-color: #74A93F !important;
     font-size: 19px !important;
-    padding: 0 7px 7px 0!important;
+    padding: 0 7px 7px 0 !important;
     border: 0 !important;
     text-align: center;
     transition: transform 0.4s;
 }
 
-.btn-colorfarm:hover{ /*Aqui cambie que se agrande el login al pasar el cursor*/
+.btn-colorfarm:hover {
+    /*Aqui cambie que se agrande el login al pasar el cursor*/
     transform: scale(1.1);
     cursor: pointer;
     font-weight: 600;
 }
 
-#title-login{
+#title-login {
     align-self: center !important;
     font-size: 23px !important;
 }
 
-#form-label-farm{
+#form-label-farm {
     text-align: left !important;
 }
 
-.form-check-label{
+.form-check-label {
     font-size: 16px !important;
-    vertical-align: text-top !important;   
+    vertical-align: text-top !important;
 }
 
-.pawlogin{
+.pawlogin {
     padding: 5px;
 }
 
-.header-contact p { 
+.header-contact p {
     margin: 0;
     color: white;
     font-weight: 300;
     font-size: 17px;
 }
 
-.contact-position{
+.contact-position {
     display: flex;
     margin-left: 18%;
     align-items: center;
 
 }
 
-.num-tel { 
+.num-tel {
     color: white;
     font-weight: 600;
     font-size: 17px;
 }
 
-.horario { 
+.horario {
     color: white;
     font-weight: 300;
     font-size: 17px;
 }
+
 .header-login {
     margin-left: 20px;
     position: relative;
     font-weight: 400;
-    font-size: 19px; 
+    font-size: 19px;
 }
 
 .header-login li {
@@ -101,44 +104,48 @@ body {
     outline: none;
 }
 
-.header-main{
+.header-main {
     display: flex;
     text-align: bottom;
 }
 
-.icon-main { /*Estos son los iconos que estan al lado del buscador*/
+.icon-main {
+    /*Estos son los iconos que estan al lado del buscador*/
     display: flex;
     justify-content: right;
     text-align: right;
-    padding: 3% 3% 3% 8%; /*aqui lo puse asi para que se alinea con el login de arriba*/
+    padding: 3% 3% 3% 8%;
+    /*aqui lo puse asi para que se alinea con el login de arriba*/
 }
 
-.icon-main li{
+.icon-main li {
     list-style-type: none;
     padding: 0 15px;
     transition: transform 0.4s;
 }
 
-.icon-main li:hover{
+.icon-main li:hover {
     transform: scale(1.3);
     cursor: pointer;
     color: #7DBCAA;
 }
 
-.icon-main a{
+.icon-main a {
     color: #74A93F;
     text-decoration: none;
     outline: none;
 }
 
-.text-menu{ /* aqui cambie las letras por defecto del menu*/
+.text-menu {
+    /* aqui cambie las letras por defecto del menu*/
     color: black !important;
     font-weight: 400 !important;
     font-size: 17px !important;
     border-radius: 10px;
 }
 
-.text-menu:hover{ /* aqui cambie el color de la letra y el fondo al pasar el mouse*/
+.text-menu:hover {
+    /* aqui cambie el color de la letra y el fondo al pasar el mouse*/
     color: white !important;
     background-color: #7DBCAA;
     border-radius: 10px !important;
@@ -146,54 +153,82 @@ body {
     font-weight: 500 !important;
 }
 
-.dropdown-item:hover{ /* cambia el color del dropmenu al pasar el*/
+.dropdown-item:hover {
+    /* cambia el color del dropmenu al pasar el*/
     font-weight: 600 !important;
     color: #55b197 !important;
-    
+
 }
 
-.buscador{
+.buscador {
     /* display: flex; */
     justify-content: space-around;
     padding: 0 0 3% 0;
 }
 
-.btn-buscador{
+.btn-buscador {
     font-weight: 500 !important;
 }
 
-.btn-buscador:hover{
+.btn-buscador:hover {
     font-weight: 500 !important;
 }
 
-.buscador-menu{
+.buscador-menu {
     padding: 2% 0 0 0;
 }
 
-.form-control{
+.form-control {
     display: flex;
 }
 
-.btn{
+.btn {
     background-color: #74A93F;
 }
 
-.header-main{
+.header-main {
     padding: 10px 0;
 }
 
 /*-------------------------------------------------------------------
  Desde aqui hacia abajo es el css correspondiente a cada pagina 
 -------------------------------------------------------------------*/
-
-.contenido-politicas{
-    justify-content: center;
-    padding: 50px 0px 50px 0px;
+.titulo-categ {
+    padding: 50px 0 30px 0;
+    text-align: center;
 }
 
-.accordion-body{
+.titulo-categ h2 {
+    color: #74A93F;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.titulo-categ span {
+    font-weight: 900;
+}
+
+.titulo-categ i {
+    color: #C1C11A;
+}
+
+.contenido-politicas {
+    justify-content: center;
+    border: 2px solid #d6d6d6d5 !important;
+    box-shadow: 0px 2px 5px #e0e0e0;
+    padding: 0 0 0 0 !important;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+
+
+}
+
+.accordion-body {
     text-align: justify;
 }
+
+
 
 
 
@@ -201,56 +236,54 @@ body {
  Desde aqui hacia arriba es el css correspondiente a cada pagina 
 -------------------------------------------------------------------*/
 
-.footer-black{
+.footer-black {
     background-color: #1E1E1E;
     padding: 50px;
     display: flex;
     align-items: center;
-    
+
     justify-content: space-between;
 }
 
-.footer-black li{
+.footer-black li {
     list-style-type: none;
 }
 
 
-.footer-black img{
-    width: 50%;   
+.footer-black img {
+    width: 50%;
 }
 
-.pie-pagina{
+.pie-pagina {
     background-color: #1E1E1E !important;
-   
+
 }
 
-.card-final{
+.card-final {
     background-color: #1E1E1E !important;
     margin: 0.5em;
     display: flex;
     justify-content: center;
     padding: 10px;
     border: #1E1E1E !important;
-    
+
 }
 
-.text-final-box h5{
+.text-final-box h5 {
     color: white !important;
 }
 
-.text-final-box a{
+.text-final-box a {
     color: white !important;
 }
 
-.text-final-box h6{
+.text-final-box h6 {
     color: white !important;
 }
 
-.derechos-re p{
+.derechos-re p {
     margin: 0 0;
     color: white;
     text-align: center;
     font-style: italic;
 }
-
-
