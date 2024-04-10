@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: 'Roboto',Arial, Helvetica, sans-serif !important;
+
 }
 
 .container-center {
@@ -102,6 +103,22 @@ body {
     outline: none;
 }
 
+/*--------------------------------------*/
+
+/*ESTILO DEL REGISTRATE EN EL LOGIN*/
+
+.pregunta-cuenta p{
+    color: #1E1E1E !important;
+    padding: 20px 0 10px 0 !important;
+}
+
+.registro-cuenta a{
+    color: #55b197!important;
+    font-size: 18px !important;
+}
+
+/*--------------------------------------*/
+
 .header-main{
     display: flex;
     text-align: bottom;
@@ -187,6 +204,22 @@ body {
 /*-------------------------------------------------------------------
  Desde aqui hacia abajo es el css correspondiente a cada pagina 
 -------------------------------------------------------------------*/
+
+.registro{
+    border-radius: 20px;
+    border: 2px solid #d6d6d6d5 !important;
+    box-shadow: 0px 2px 5px #e0e0e0;  
+    margin: 50px 50px !important;  
+}
+
+.ingreso{
+    border-radius: 20px;
+    border: 2px solid #d6d6d6d5 !important;
+    box-shadow: 0px 2px 5px #e0e0e0;
+    margin: 50px 50px !important;  
+    
+}
+
 .banner img{
     width: 100%;
     height: auto;
@@ -198,10 +231,52 @@ body {
 }
 
 .formulario-registro{
-    margin: 50px 0px 50px 50px;
+    margin: 20px;
+}
+
+.formulario-registro h3{
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: #55b197;
 }
 
 
+.formulario-ingreso{
+    margin: 20px;
+}
+
+.formulario-ingreso h3{
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: #55b197;
+}
+
+.olvido-pass a{
+    padding: 0 0 0 10px;
+}
+
+.patitas-gif{
+    display: flex;
+    justify-content: center;
+}
+
+.patitas-gif img{
+    width: 25%;
+    padding: 11px 0;
+    opacity: 0.5;
+}
+
+.btn-registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.btn-ingreso{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
 
 
 /*-------------------------------------------------------------------

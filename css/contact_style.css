@@ -102,6 +102,22 @@ body {
     outline: none;
 }
 
+/*--------------------------------------*/
+
+/*ESTILO DEL REGISTRATE EN EL LOGIN*/
+
+.pregunta-cuenta p{
+    color: #1E1E1E !important;
+    padding: 20px 0 10px 0 !important;
+}
+
+.registro-cuenta a{
+    color: #55b197!important;
+    font-size: 18px !important;
+}
+
+/*--------------------------------------*/
+
 .header-main{
     display: flex;
     text-align: bottom;
