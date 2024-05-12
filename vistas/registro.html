@@ -23,7 +23,7 @@
     <div class="contact-color">
         <div class="d-flex header-contact container-center">
             <div class="contact-position">
-                <p> Contáctanos al <span class="num-tel">+569884098133 </span>| <span class="horario">Lunes a Domingo :
+                <p> Contáctanos al <span class="num-tel">+56988409813 </span>| <span class="horario">Lunes a Domingo :
                         09:00 a 19:00 hrs.</span></p>
             </div>
             <div class="header-login">
@@ -64,6 +64,12 @@
                                     <button type="submit" class="btn btn-success">Iniciar sesión</button>
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cerrar</button>
+                                    <div class="pregunta-cuenta">
+                                        <p>¿Eres nuevo en RebelFarm.cl?</p>
+                                    </div>
+                                    <div class="registro-cuenta">
+                                        <a href="../vistas/registro.html">Crea una cuenta</a>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -78,7 +84,8 @@
 
     <div class="container-center header-main">
         <div class="logo">
-            <img src="../img/ico_animales/LOGO.png" alt="">
+            <a class="nav-link" href="./index.html" role="button" aria-expanded="false"><img
+                    src="../img/ico_animales/LOGO.png" alt=""></a>
         </div>
 
         <!--BUSCADOR-->
@@ -174,7 +181,8 @@
                                     <a class="nav-link text-menu" aria-current="page" href="#">Servicios</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-menu" aria-current="page" href="./contacto.html">Contacto</a>
+                                    <a class="nav-link text-menu" aria-current="page"
+                                        href="./contacto.html">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -211,76 +219,126 @@
     </div>
 
     <!--Aqui se debe colocar el contenido diferente de cada página-->
+
     <div class="banner">
-        <img src="../img/img_carrusel/imagen_carro_reg.png" class="img-fluid" alt="...">
+        <img src="../img/img_carrusel/rebel_club.jpg" class="img-fluid" alt="...">
     </div>
-    <div class="container">
-        <form class="formulario-registro">
-            <div class="mb-3">
-                <label for="inputUsuario" class="form-label">Usuario</label>
-                <input type="text" class="form-control" id="inputUsuario">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1"
-                    placeholder="nombre@ejemplo.cl">
-            </div>
-            <div class="mb-3">
-                <label for="inputPass" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="inputPass">
-            </div>
-            <div class="mb-3">
-                <label for="inputPass" class="form-label">Confirma tu Contraseña</label>
-                <input type="password" class="form-control" id="inputPass">
-            </div>
-            <button type="submit" class="btn btn-success">Registrarse</button>
-        </form>
+
+    <!--Titulo de la pagina-->
+
+    <div class="container-center">
+        <div class=" titulo-categ">
+            <h1><i class="fa-sharp fa-solid fa-paw"></i> INGRESA O REGÍSTRATE <i
+                    class="fa-sharp fa-solid fa-paw"></i></h1>
+        </div>
+        <div class="subti-registro">
+            <p>Únete a la gran familia Rebel Farm y podrás acumular y canjear RebelPuntos, realizar seguimiento de tus compras, participar en concursos ¡Y más!</p>
+        </div>
+    </div>
+
+
+
+    <!--Formularios de ingreso y registro-->
+    <div class="container-center d-flex registro-ingreso">
+        <div class="container registro">
+            <form class="formulario-registro">
+                <h3> Crea tu cuenta</h3>
+                <div class="mb-3">
+                    <div>
+                        <label for="inputUsuario" class="form-label">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="inputUsuario">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="nombre@ejemplo.cl">
+                </div>
+                <div class="mb-3">
+                    <label for="inputPass" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPass">
+                </div>
+                <div class="mb-3">
+                    <label for="inputPass" class="form-label">Confirma tu Contraseña</label>
+                    <input type="password" class="form-control" id="inputPass">
+                </div>
+                <div class="btn-registro">
+                    <button type="submit" class="btn btn-success">Registrarse</button>
+                </div>
+            </form>
+        </div>
+        <div class="container ingreso">
+            <form class="formulario-ingreso">
+                <h3>Ingresa a tu cuenta</h3>
+                <div class="mb-3">
+                    <div>
+                        <label for="inputUsuario" class="form-label">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="inputUsuario">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputPass" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPass">
+                </div>
+                <div class="d-flex olvido-pass">
+                    <p>¿Olvidaste tu contraseña? </p><a href="">Haz clic aquí</a>   
+                </div>
+                <div class="patitas-gif">
+                    <img src="../img/ico_animales/paws.gif" alt="">
+                </div>
+                
+                <div class="btn-ingreso">
+                    <button type="submit" class="btn btn-success">Iniciar Sesión</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <!--Aqui termina el contenido diferente de cada página-->
-        <!--FOOTER-->
-        <div class="pie-pagina">
-            <div class="footer-black container-center">
-                <div class="card card-final" style="width: 18rem;">
-                    <div class="card-body text-final-box">
-                        <h5 class="card-title">CONTACTO</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">_______________</h6>
-                        
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Francisco Bilbao 1095, Osorno. Los Lagos</h6>
-                        <img src="../img/ico_animales/icono_footer.png" alt="...">
+    <!--FOOTER-->
+    <div class="pie-pagina">
+        <div class="footer-black container-center">
+            <div class="card card-final" style="width: 18rem;">
+                <div class="card-body text-final-box">
+                    <h5 class="card-title">CONTACTO</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">_______________</h6>
 
-                    </div>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Francisco Bilbao 1095, Osorno. Los Lagos</h6>
+                    <img src="../img/ico_animales/icono_footer.png" alt="...">
+
                 </div>
-                <div class="card card-final" style="width: 18rem;">
-                    <div class="card-body text-final-box">
-                        <h5 class="card-title">NOSOTROS</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">_______________</h6>
-                        <li><a class="dropdown-item" href="#">Misión y visión</a></li>
-                        <li><a class="dropdown-item" href="./politicas_seg.html">Políticas de Seguridad</a></li>
-                        <li><a class="dropdown-item" href="#">Políticas de Entrega</a></li>
-                        <li><a class="dropdown-item" href="#">Términos y Condiciones</a></li>
-                        <li><a class="dropdown-item" href="#">Seguimiento de tu pedido</a></li>
-                        <li><a class="dropdown-item" href="#">Únete a nuestro equipo</a></li>
-                    </div>
-                </div>
-                <div class="card card-final" style="width: 18rem;">
-                    <div class="card-body text-final-box">
-                        <h5 class="card-title">CLIENTE</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">_______________</h6>
-                        <li><a class="dropdown-item" href="#">Rebel Club</a></li>              
-                        <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
-                        <li><a class="dropdown-item" href="#">Carrito</a></li>
-                        <li><a class="dropdown-item" href="#">Favoritos</a></li>
-                        <li><a class="dropdown-item" href="#">Historial</a></li>
-                        <li><a class="dropdown-item" href="#">Productos por puntos</a></li>
-                    </div>    
-                </div>
-            <!--FIN DE LA PAGINA-->   
             </div>
-            <div class="derechos-re">
-                <p>Rebelfarm S.A. Todos los derechos reservados 2024.</p>
+            <div class="card card-final" style="width: 18rem;">
+                <div class="card-body text-final-box">
+                    <h5 class="card-title">NOSOTROS</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">_______________</h6>
+                    <li><a class="dropdown-item" href="#">Misión y visión</a></li>
+                    <li><a class="dropdown-item" href="./politicas_seg.html">Políticas de Seguridad</a></li>
+                    <li><a class="dropdown-item" href="#">Políticas de Entrega</a></li>
+                    <li><a class="dropdown-item" href="#">Términos y Condiciones</a></li>
+                    <li><a class="dropdown-item" href="#">Seguimiento de tu pedido</a></li>
+                    <li><a class="dropdown-item" href="#">Únete a nuestro equipo</a></li>
+                </div>
+            </div>
+            <div class="card card-final" style="width: 18rem;">
+                <div class="card-body text-final-box">
+                    <h5 class="card-title">CLIENTE</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">_______________</h6>
+                    <li><a class="dropdown-item" href="./registro.html">Rebel Club</a></li>
+                    <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
+                    <li><a class="dropdown-item" href="#">Carrito</a></li>
+                    <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                    <li><a class="dropdown-item" href="#">Historial</a></li>
+                    <li><a class="dropdown-item" href="#">Puntos</a></li>
+                </div>
             </div>
             <!--FIN DE LA PAGINA-->
+        </div>
+        <div class="derechos-re">
+            <p>Rebelfarm S.A. Todos los derechos reservados 2024.</p>
+        </div>
+        <!--FIN DE LA PAGINA-->
 
         <!-- Siempre el script va al final del body -->
         <script src="../bootstrap/js/bootstrap.min.js"></script>
