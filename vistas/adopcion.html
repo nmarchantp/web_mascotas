@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--meta responsivo-->
-    <link rel="stylesheet" href="../css/contact_style.css">
+    <link rel="stylesheet" href="../css/adopcion.css">
     <title>RebelFarm</title>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <!-- Siempre bootstrap va en el head -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-        <!-- esto en todas las paginas -->
+    <!-- esto en todas las paginas -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../js/api_adopcion.js"></script>  
+    <script src="../js/api_adopcion.js"></script>
 </head>
 
 <body>
@@ -177,10 +177,16 @@
                                 </li> -->
                                     </ul>
                                 </li>
-                                    <!-- esto en todas las paginas -->
-                                <li class="nav-item">
-                                    <!-- <a class="nav-link text-menu" aria-current="page" href="#">Servicios</a> -->
-                                    <button id="adopcion_btn" class="btn btn-primary" type="button">Adopciones</button>
+                                <!-- esto en todas las paginas -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-menu" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Servicios
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../vistas/adopcion.html">Adopta un peludo</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <!-- hasta aqui -->
                                 <li class="nav-item">
@@ -223,15 +229,33 @@
 
     <!--Aqui se debe colocar el contenido diferente de cada página-->
 
-    <!-- API ADOPCION -->
-    <div>
-        <table id="adopcion">
+    <!--BANNER DE LA PAGINA-->
+    <div class="banner">
+        <img src="../img/img_carrusel/adopta.jpg" class="img-fluid" alt="...">
+    </div>
+    <!--Contenido de la pagina-->
+    <div class="pag-adopta">
 
+        <div class="adopcion-invita">
+            <div class="boton-lista-adopcion">
+                <button id="adopcion_btn" class="btn btn-info btn-adopta" type="button">No compres, Adopta</button>
+            </div>
+            <div>
+                <img src="../img/img_productos/adopcion.png" class="img-fluid" alt="...">
+                <!--BOTON PARA ACCEDER A LA API-->
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- API ADOPCION -->
+    <div class="container-center">
+        <table id="adopcion">
         </table>
     </div>
 
 
-     <!--Aqui termina el contenido diferente de cada página-->
+    <!--Aqui termina el contenido diferente de cada página-->
     <!--FOOTER-->
     <div class="pie-pagina">
         <div class="footer-black container-center">
@@ -275,13 +299,13 @@
             <p>Rebelfarm S.A. Todos los derechos reservados 2024.</p>
         </div>
         <!--FIN DE LA PAGINA-->
-
-        <!-- Siempre el script va al final del body -->
-        <script src="../bootstrap/js/bootstrap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/877d2cecdc.js" crossorigin="anonymous"></script>
+    </div>
+    <!-- Siempre el script va al final del body -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/877d2cecdc.js" crossorigin="anonymous"></script>
 
 
 </body>

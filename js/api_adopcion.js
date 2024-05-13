@@ -6,36 +6,32 @@ $(document).ready(function () {
         $.get("https://huachitos.cl/api/animales",
             function (data) {
                 //console.log(data.data);
+                $("#adopcion").append("<tr><td>FOTO</td><td>NOMBRE</td><td>TIPO</td><td>EDAD</td><td>GÉNERO</td><td>FICHA</td></tr>")
                 $.each(data.data,function(i,item){     
                     var nombre = item.nombre;
                     var tipo = item.tipo;
-                    var color = item.color;
                     var edad = item.edad;
                     var estado = item.estado;
                     var genero = item.genero;
                     var descripcion_fisica = item.desc_fisica;
                     var descripcion_personalidad = item.desc_personalidad;
-                    var descripcion_adicional = item.adicional;
-                    var esterilizado = item.esterilizado;
-                    var vacunas = item.vacunas;
                     var imagen = item.imagen;
-                    var region = item.region;
-                    var comuna = item.comuna;
                     var url = item.url;               
                     console.log(item.id);
-                    $("#adopcion").append("<tr><td>"+nombre+
-                    "</td><td>"+tipo+"</td><td>"+
-                    color+"</td><td>"+edad+"</td><td>"+
-                    estado+"</td><td>"+genero+"</td><td>"+
-                    descripcion_fisica+"</td><td>"+descripcion_personalidad
-                    +"</td><td>"+descripcion_adicional+"</td><td>"+
-                    esterilizado+"</td><td>"+vacunas+"</td><td><img src='"+
-                    imagen+"'></td><td>"+
-                    region+"</td><td>"+comuna+"</td><td>"+url+"</td></tr>")
+                    $("#adopcion").append("<tr><td><img src='"+
+                    imagen+"'></td><td>"+nombre+
+                    "</td><td>"+tipo+"</td><td>"+edad+"</td><td>"+genero+"</td><td><button class='url-btn' data-url='" + url + "'>Adoptar</button></td></tr>") //para que la url se transforme en un boton, le sumamos un button y class -- El atributo data-url es una forma de almacenar datos personalizados en un elemento HTML utilizando el prefijo data-. En este caso, se está utilizando para almacenar la URL correspondiente a cada elemento de la tabla.
                 })
                 
             });
 
     });
+// Agrega un evento clic a los botones de URL
+$(document).on('click', '.url-btn', function () {
+    // Obtiene la URL de los datos atributo
+    var url = $(this).data('url');
+    // Redirecciona a la URL
+    window.location.href = url;
+});
 });
 
