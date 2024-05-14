@@ -204,28 +204,22 @@ body {
 /*-------------------------------------------------------------------
  Desde aqui hacia abajo es el css correspondiente a cada pagina 
 -------------------------------------------------------------------*/
-
-.registro{
-    border-radius: 20px;
-    border: 2px solid #d6d6d6d5 !important;
-    box-shadow: 0px 2px 5px #e0e0e0;  
-    margin: 20px 50px 50px 50px !important;  
-}
-
-.ingreso{
-    border-radius: 20px;
-    border: 2px solid #d6d6d6d5 !important;
-    box-shadow: 0px 2px 5px #e0e0e0;
-    margin: 20px 50px 50px 50px !important;  
-    
-}
-
 .banner img{
     width: 100%;
     height: auto;
     justify-content: center;
 }
 
+/*caja del formulario*/
+.registro{
+    border-radius: 20px;
+    border: 2px solid #d6d6d6d5 !important;
+    box-shadow: 0px 2px 5px #e0e0e0;  
+    margin: 20px 50px 50px 50px !important; 
+    padding: 0 30px !important; 
+}
+
+/*parte del titulo registrate y gana*/
 .titulo-categ{
     padding: 50px 0 30px 0;
     text-align: center;
@@ -250,35 +244,20 @@ body {
     padding: 0 0 0 60px;
 }
 
-.container{
-    justify-content: center;
-}
 
+
+/*espacios del formulario*/
 .formulario-registro{
     margin: 20px;
 }
 
-.formulario-registro h3{
+.registro h3{
     text-align: center;
-    padding: 0 0 20px 0;
+    padding: 20px 0;
     color: #55b197;
 }
 
-
-.formulario-ingreso{
-    margin: 20px;
-}
-
-.formulario-ingreso h3{
-    text-align: center;
-    padding: 0 0 20px 0;
-    color: #55b197;
-}
-
-.olvido-pass a{
-    padding: 0 0 0 10px;
-}
-
+/*USAR LAS PATITAS EN OTRO LADO
 .patitas-gif{
     display: flex;
     justify-content: center;
@@ -289,17 +268,152 @@ body {
     padding: 11px 0;
     opacity: 0.5;
 }
+*/
+/*-------------------------------------------------------------------
+ CSS DEL FORMULARIO DE REGISTRO
+-------------------------------------------------------------------*/
 
-.btn-registro{
-    display: flex;
-    align-items: center;
-    justify-content: center;   
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-.btn-ingreso{
+.formulario_label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario_grupo-input{
+    position: relative;
+
+}
+
+.formulario-input{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #808080;
+    border-radius: 8px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .1s ease all;
+
+}
+
+.formulario-input:focus{
+    border: 2px solid #55b197;
+    outline: none;
+    box-shadow: 3px 0px 8px #b3b2b2;
+}
+
+
+/*Con esto hacemos desaparecer el mensaje de error de cada label*/
+.formulario_input-error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none; /*esto lo oculta*/
+}
+
+.formulario_input-error-activo{
+    display: block;
+}
+
+/*mete la X de error en el label y la centra al final*/
+.formulario_validacion-estado{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0; /*hago desaparecer la X ya que solo queremos que salga cuando el usuario haga algo erroneo*/
+}
+
+.formulario_checkbox{
+    margin-right: 10px;
+}
+
+.formulario_grupo-terminos, .formulario_mensaje, .formulario_grupo-btn-enviar{
+    grid-column: span 2;    
+}
+
+.formulario_mensaje{
+    height: 45px;
+    color: #fff;
+    line-height: 45px;
+    background-color: #d87a7a;
+    padding: 0 15px;
+    border-radius: 8px;
+    display: none; /*no aparece hasta que se marque error*/
+}
+
+.formulario_mensaje-activo{
+    display: block; /*solo aparece cuando este activo*/
+}
+
+.formulario_grupo-btn-enviar{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;   
+    padding: 0 0 10px 0 ;
+    
+       
+}
+
+.btn-success:hover{
+    box-shadow: 3px 0px 8px #b3b2b2;
+}
+
+.formulario_mensaje-exito{
+    font-size: 14px;
+    color: #74A93F;
+    padding: 10px 0;
+    display: none;
+    
+}
+
+.formulario_mensaje-exito-activo {
+	display: block;
+}
+
+/*-------------------------------------------------------------------
+ CSS DE VALIDACIÓN DEL REGISTRO
+-------------------------------------------------------------------*/
+
+.formulario_grupo-correcto .formulario_validacion-estado{
+    color: #74A93F;
+    opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario_label{
+    color: #d87a7a;
+}
+
+.formulario_grupo-incorrecto .formulario_validacion-estado{
+    color: #d87a7a;
+    opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario-input{
+    border: 3px solid #d87a7a ;
+
+}
+
+/*-------------------------------------------------------------------
+ CSS DE REGISTRO RESPONSIVO (MEDIAQUERYS)
+-------------------------------------------------------------------*/
+
+@media screen and (max-width: 800px){
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+    
+    .formulario_grupo-terminos, .formulario_mensaje, .formulario_grupo-btn-enviar{
+        grid-column: 1;
+    }
+
 }
 
 

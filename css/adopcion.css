@@ -212,8 +212,9 @@ body {
 /* dejamos el botón arriba de la imagen*/
 .boton-lista-adopcion{
     position: absolute;
-    top: 68%;
-    left: 41%;
+    top: 72%;
+    left: 43%;
+    width: 70%;
 }
 
 .adopcion-invita{
@@ -224,12 +225,15 @@ body {
 }
 
 .btn-adopta{
-    background-color: #66c4d9 !important ;
-    border-radius: 30px !important;
-    border: 5px solid #2b2b2b !important;
-    font-size: 30px !important;
-    color: white !important;
-    padding: 5px 40px !important;
+    width: 50% !important; /* Ancho del botón del 50% del ancho del contenedor */
+    max-width: 300px !important; /* Ancho máximo del botón */
+    height: auto !important; /* Altura automática según el contenido */
+    padding: 5px 5px !important; /* Espaciado interno */
+    font-size: 28px !important; /* Tamaño de fuente */
+    background-color: #66c4d9 !important; /* Color de fondo */
+    color: white !important; /* Color de texto */
+    border: 3px solid #2b2b2b !important; 
+    border-radius: 50px !important; /* Bordes redondeados */
     font-weight: 600 !important;
     transition: transform 0.2s !important;
 }
@@ -259,7 +263,7 @@ body {
 /*Esta clase la dimos en JS para transformar el url a boton*/
 
 .url-btn{
-    transition: transform 0.2s;
+    transition: transform 0.2s;             
 }
 
 .url-btn:hover{
@@ -326,4 +330,36 @@ body {
     font-style: italic;
 }
 
+/* Media query para ajustar el tamaño del botón en pantallas más pequeñas */
+@media screen and (max-width: 1200px) {
+    .boton-lista-adopcion{
+        position: absolute;
+        top: 70%;
+        left: 42%;
+        width: 50%;
+    
+    .btn-adopta {
+        width: 70% !important;
+        font-size: 15px !important;
+        max-width: 200px !important;
+    }
+}
+}
+
+/* Media query para ajustar el tamaño del botón en pantallas aún más pequeñas */
+@media screen and (max-width: 700px) {
+    .boton-lista-adopcion{
+        position: absolute;
+        top: 68%;
+        left: 37%;
+        width: 50%;
+
+    .btn-adopta {
+        width: 90% !important;
+        font-size: 10px !important;
+        max-width: 150px !important;
+    }
+}
+
+}
 
