@@ -330,18 +330,18 @@ body {
     font-style: italic;
 }
 
-/* Media query para ajustar el tamaño del botón en pantallas más pequeñas */
-@media screen and (max-width: 1200px) {
+/*Media query para ajustar el tamaño del botón en pantallas más pequeñas*/
+@media screen {
     .boton-lista-adopcion{
         position: absolute;
         top: 70%;
-        left: 42%;
+        left: 43%;
         width: 50%;
     
     .btn-adopta {
         width: 70% !important;
-        font-size: 15px !important;
-        max-width: 200px !important;
+        font-size: 25px !important;
+        max-width: 300px !important;
     }
 }
 }
